@@ -1,8 +1,0 @@
-function doGet() {
-  return HtmlService.createHtmlOutputFromFile('calendarPicker');
-}
-
-function saveDate(date) {
-  const sheet = SpreadsheetApp.openById('https://docs.google.com/forms/d/1kv41zIzkZpobZuZzRwwulu17u9FPMG5nBlZrCZiFnuM/edit').getActiveSheet();
-  sheet.appendRow([date]);
-}
